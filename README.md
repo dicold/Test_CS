@@ -6,9 +6,10 @@
 + полный проект с исходным кодом.
 
 #### Подключение БД к проекту
-Для правильного подключения базы данных к проекту, необходимо в .config-файле указать имя сервера локальной службы SQL:
-
-connectionString="Data Source=*DESKTOP-7V0R4GH\SQLEXPRESS*;Initial Catalog=ShipmentDB;Integrated Security=True"
+Для правильного подключения базы данных к проекту, необходимо в .config-файле указать имя сервера локальной службы SQL (Data Source).
+```c#
+connectionString="Data Source=DESKTOP-7V0R4GH\SQLEXPRESS;Initial Catalog=ShipmentDB;Integrated Security=True"
+```
 #### Работа с приложением
 При запуске приложения появляется форма с datagrid-ом, ячейки которой автоматиечкски заполненяются данными с БД.
 Пользователь указывает колонки, по которым он хочет получить итоги, с помощью checklist в правой части формы, отмечая их галочками.
