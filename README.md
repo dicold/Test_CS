@@ -1,17 +1,17 @@
 # Test_CS
-Проект создан на WinForms для работы с БД, подключением к ней и созданием простого запроса, а так же для выведения полученных данных в форму.
+A project created on WinForms for working with a DB, connecting to it and creating a simple query, as well as for displaying the received data in a form.
 
-Состав архива:
-+ база данных (MS SQL Server) с одной таблицей;
-+ полный проект с исходным кодом.
+The composition of the archive:
++ database (MS SQL Server) with one table;
++ full project with source code.
 
-#### Подключение БД к проекту
-Для правильного подключения базы данных к проекту, необходимо в .config-файле указать имя сервера локальной службы SQL (Data Source).
+#### Connecting a database to a project
+For the correct connection of the database to the project, it is necessary to specify the server name of the local SQL service (Data Source) in the .config file.
 ```c#
 connectionString="Data Source=DESKTOP-7V0R4GH\SQLEXPRESS;Initial Catalog=ShipmentDB;Integrated Security=True"
 ```
-#### Работа с приложением
-При запуске приложения появляется форма с datagrid-ом, ячейки которой автоматиечкски заполненяются данными с БД.
-Пользователь указывает колонки, по которым он хочет получить итоги, с помощью checklist в правой части формы, отмечая их галочками.
-После, нажимает кнопку "Group" и данные суммируются по указанным колонкам, и в том же datagrid-е вместо исходных данных выводятся итоговые.
-Пользователь может отказаться от выбранной группировки, нажав "Return original data", после чего в datagrid вернутся исходные данные из БД.
+#### Working with the application
+When the application starts, a form with a datagrid appears, the cells of which are automatically filled with data from the DB.
+The user specifies the columns for which he wants to get totals using the checklist on the right side of the form, ticking them.
+After that, user presses the "Group" button and the data is summarized by the specified columns, and in the same datagrid, instead of the original data, the totals are displayed.
+The user can refuse the selected grouping by clicking "Return original data", after which the original data from the DB will be returned to the datagrid.
